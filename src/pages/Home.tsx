@@ -111,16 +111,23 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Content - Enhanced Profile Section */}
+          {/* Right Content - Profile Image Section */}
           <div className="lg:w-1/2 flex justify-center mt-12 lg:mt-0 animate-fade-in delay-300">
             <div className="relative group">
-              {/* Main Profile Circle */}
+              {/* Main Profile Circle with Image */}
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-600 via-purple-600 to-cyan-600 p-1 shadow-2xl group-hover:shadow-blue-500/25 transition-all duration-500">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
-                  <div className="text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">AM</div>
+                <div className="w-full h-full rounded-full overflow-hidden relative">
+                  <img 
+                    src="/lovable-uploads/fa0ac814-5f1d-4672-af43-aaba7993093d.png" 
+                    alt="Macharla Anvesh"
+                    className="w-full h-full object-cover object-center filter brightness-110 contrast-105 saturate-110 group-hover:scale-105 transition-transform duration-500"
+                  />
                   
-                  {/* Subtle inner glow */}
+                  {/* Subtle overlay for better integration */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full"></div>
+                  
+                  {/* Professional lighting effect */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent rounded-full"></div>
                 </div>
               </div>
 
