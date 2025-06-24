@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Github, Linkedin, Code, Sparkles, Download } from 'lucide-react';
-
 const Home = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+  return <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-10 -right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -57,18 +54,12 @@ const Home = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/projects"
-                className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-full font-medium transition-all duration-300 inline-flex items-center justify-center space-x-3 shadow-lg hover:shadow-blue-500/25 hover:scale-105"
-              >
+              <Link to="/projects" className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-full font-medium transition-all duration-300 inline-flex items-center justify-center space-x-3 shadow-lg hover:shadow-blue-500/25 hover:scale-105">
                 <Code className="w-5 h-5" />
                 <span>View Projects</span>
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-              <Link
-                to="/contact"
-                className="group border-2 border-gray-600 hover:border-blue-400 px-8 py-4 rounded-full font-medium transition-all duration-300 inline-flex items-center justify-center space-x-3 hover:bg-blue-400/10 hover:scale-105"
-              >
+              <Link to="/contact" className="group border-2 border-gray-600 hover:border-blue-400 px-8 py-4 rounded-full font-medium transition-all duration-300 inline-flex items-center justify-center space-x-3 hover:bg-blue-400/10 hover:scale-105">
                 <span>Get in Touch</span>
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
@@ -76,20 +67,10 @@ const Home = () => {
 
             {/* Social Links */}
             <div className="flex items-center space-x-6 pt-6">
-              <a
-                href="https://github.com/Anveshmacharla"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-3 bg-gray-800/50 hover:bg-gray-700/50 rounded-full transition-all duration-300 hover:scale-110 border border-gray-700 hover:border-gray-600"
-              >
+              <a href="https://github.com/Anveshmacharla" target="_blank" rel="noopener noreferrer" className="group p-3 bg-gray-800/50 hover:bg-gray-700/50 rounded-full transition-all duration-300 hover:scale-110 border border-gray-700 hover:border-gray-600">
                 <Github className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors duration-300" />
               </a>
-              <a
-                href="https://linkedin.com/in/anvesh-macharla-304b62303"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-3 bg-gray-800/50 hover:bg-blue-600/20 rounded-full transition-all duration-300 hover:scale-110 border border-gray-700 hover:border-blue-500"
-              >
+              <a href="https://linkedin.com/in/anvesh-macharla-304b62303" target="_blank" rel="noopener noreferrer" className="group p-3 bg-gray-800/50 hover:bg-blue-600/20 rounded-full transition-all duration-300 hover:scale-110 border border-gray-700 hover:border-blue-500">
                 <Linkedin className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors duration-300" />
               </a>
             </div>
@@ -117,11 +98,7 @@ const Home = () => {
               {/* Main Profile Circle with Image */}
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-600 via-purple-600 to-cyan-600 p-1 shadow-2xl group-hover:shadow-blue-500/25 transition-all duration-500">
                 <div className="w-full h-full rounded-full overflow-hidden relative">
-                  <img 
-                    src="/lovable-uploads/fa0ac814-5f1d-4672-af43-aaba7993093d.png" 
-                    alt="Macharla Anvesh"
-                    className="w-full h-full object-cover object-center filter brightness-110 contrast-105 saturate-110 group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src="/lovable-uploads/fa0ac814-5f1d-4672-af43-aaba7993093d.png" alt="Macharla Anvesh" className="w-full h-full object-cover object-center filter brightness-110 contrast-105 saturate-110 group-hover:scale-105 transition-transform duration-500" />
                   
                   {/* Subtle overlay for better integration */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full"></div>
@@ -135,16 +112,19 @@ const Home = () => {
               <div className="absolute -top-6 -right-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium border border-blue-500/30 animate-bounce delay-500">
                 Full Stack
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium border border-purple-500/30 animate-bounce delay-700">
-                React Dev
-              </div>
+              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium border border-purple-500/30 animate-bounce delay-700">Java</div>
               <div className="absolute top-1/2 -right-8 bg-gradient-to-r from-cyan-600 to-cyan-700 text-white px-3 py-2 rounded-full shadow-lg text-xs font-medium border border-cyan-500/30 animate-bounce delay-1000">
                 Python
               </div>
 
               {/* Orbital rings */}
-              <div className="absolute inset-0 rounded-full border border-blue-500/20 animate-spin" style={{ animationDuration: '20s' }}></div>
-              <div className="absolute inset-4 rounded-full border border-purple-500/20 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
+              <div className="absolute inset-0 rounded-full border border-blue-500/20 animate-spin" style={{
+              animationDuration: '20s'
+            }}></div>
+              <div className="absolute inset-4 rounded-full border border-purple-500/20 animate-spin" style={{
+              animationDuration: '15s',
+              animationDirection: 'reverse'
+            }}></div>
             </div>
           </div>
         </div>
@@ -157,8 +137,6 @@ const Home = () => {
           <p className="text-gray-500 text-xs mt-2 text-center">Scroll Down</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
