@@ -1,41 +1,39 @@
-
 import React from 'react';
 import { GraduationCap, MapPin, Calendar, Star, Award } from 'lucide-react';
-
 const About = () => {
-  const education = [
-    {
-      degree: "B.Tech in Computer Science",
-      institution: "Aurora Deemed to be University, Hyderabad",
-      period: "2024 - 2027",
-      status: "Current",
-      icon: <GraduationCap size={20} />
-    },
-    {
-      degree: "Intermediate",
-      institution: "Toppers Junior College, Hyderabad",
-      period: "2021 - 2023",
-      status: "Completed",
-      icon: <Award size={20} />
-    },
-    {
-      degree: "High School",
-      institution: "Sri Vignan School, Hyderabad",
-      period: "Graduated 2021",
-      status: "Completed",
-      icon: <Award size={20} />
-    }
-  ];
-
-  const highlights = [
-    { label: "Years of Learning", value: "3+" },
-    { label: "Academic Focus", value: "CS" },
-    { label: "Current CGPA", value: "8.5+" },
-    { label: "Projects Done", value: "3" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+  const education = [{
+    degree: "B.Tech in Computer Science",
+    institution: "Aurora Deemed to be University, Hyderabad",
+    period: "2024 - 2027",
+    status: "Current",
+    icon: <GraduationCap size={20} />
+  }, {
+    degree: "Intermediate",
+    institution: "Toppers Junior College, Hyderabad",
+    period: "2021 - 2023",
+    status: "Completed",
+    icon: <Award size={20} />
+  }, {
+    degree: "High School",
+    institution: "Sri Vignan School, Hyderabad",
+    period: "Graduated 2021",
+    status: "Completed",
+    icon: <Award size={20} />
+  }];
+  const highlights = [{
+    label: "Years of Learning",
+    value: "3+"
+  }, {
+    label: "Academic Focus",
+    value: "CS"
+  }, {
+    label: "Current CGPA",
+    value: "8.5+"
+  }, {
+    label: "Projects Done",
+    value: "3"
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -54,16 +52,14 @@ const About = () => {
 
         {/* Personal Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16 animate-fade-in delay-200">
-          {highlights.map((item, index) => (
-            <div key={index} className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300 hover:transform hover:scale-105 group">
+          {highlights.map((item, index) => <div key={index} className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300 hover:transform hover:scale-105 group">
               <div className="text-center">
                 <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                   {item.value}
                 </div>
                 <div className="text-gray-400 text-sm">{item.label}</div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -117,13 +113,16 @@ const About = () => {
               <div className="absolute -top-6 -right-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-full shadow-lg text-sm font-medium border border-blue-500/30 animate-bounce delay-500 backdrop-blur-sm">
                 Student Dev
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-full shadow-lg text-sm font-medium border border-purple-500/30 animate-bounce delay-700 backdrop-blur-sm">
-                CS Major
-              </div>
+              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-full shadow-lg text-sm font-medium border border-purple-500/30 animate-bounce delay-700 backdrop-blur-sm">Data Science Student</div>
 
               {/* Orbital rings */}
-              <div className="absolute inset-0 rounded-full border border-blue-500/20 animate-spin" style={{ animationDuration: '20s' }}></div>
-              <div className="absolute inset-4 rounded-full border border-purple-500/20 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
+              <div className="absolute inset-0 rounded-full border border-blue-500/20 animate-spin" style={{
+              animationDuration: '20s'
+            }}></div>
+              <div className="absolute inset-4 rounded-full border border-purple-500/20 animate-spin" style={{
+              animationDuration: '15s',
+              animationDirection: 'reverse'
+            }}></div>
             </div>
           </div>
         </div>
@@ -135,8 +134,7 @@ const About = () => {
             Educational Journey
           </h2>
           <div className="space-y-6">
-            {education.map((edu, index) => (
-              <div key={index} className="bg-gradient-to-r from-gray-800/80 to-gray-800/40 backdrop-blur-sm p-8 rounded-2xl shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 border border-gray-700/50 hover:border-blue-500/30 group">
+            {education.map((edu, index) => <div key={index} className="bg-gradient-to-r from-gray-800/80 to-gray-800/40 backdrop-blur-sm p-8 rounded-2xl shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 border border-gray-700/50 hover:border-blue-500/30 group">
                 <div className="flex items-start space-x-6">
                   <div className="bg-gradient-to-br from-blue-600 to-purple-600 p-4 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                     {edu.icon}
@@ -144,11 +142,7 @@ const About = () => {
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                       <h3 className="text-xl lg:text-2xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300">{edu.degree}</h3>
-                      <span className={`inline-block px-4 py-2 rounded-full text-sm font-medium ${
-                        edu.status === 'Current' 
-                          ? 'bg-gradient-to-r from-green-600 to-green-700 text-white shadow-lg' 
-                          : 'bg-gradient-to-r from-gray-600 to-gray-700 text-gray-300 shadow-lg'
-                      }`}>
+                      <span className={`inline-block px-4 py-2 rounded-full text-sm font-medium ${edu.status === 'Current' ? 'bg-gradient-to-r from-green-600 to-green-700 text-white shadow-lg' : 'bg-gradient-to-r from-gray-600 to-gray-700 text-gray-300 shadow-lg'}`}>
                         {edu.status}
                       </span>
                     </div>
@@ -159,8 +153,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -168,18 +161,14 @@ const About = () => {
         <div className="text-center animate-fade-in delay-900">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-12">Languages</h2>
           <div className="flex flex-wrap justify-center gap-6">
-            {['Telugu', 'Hindi', 'English'].map((language, index) => (
-              <div key={language} className="group">
+            {['Telugu', 'Hindi', 'English'].map((language, index) => <div key={language} className="group">
                 <div className="bg-gradient-to-br from-gray-800/80 to-gray-800/40 backdrop-blur-sm px-8 py-4 rounded-xl shadow-lg border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300 hover:scale-105 hover:shadow-blue-500/20">
                   <span className="text-white font-semibold text-lg group-hover:text-blue-300 transition-colors duration-300">{language}</span>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
